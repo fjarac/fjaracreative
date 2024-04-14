@@ -5,14 +5,19 @@ h3 {
 
 body {
   font-family: 'Open Sans', sans-serif;
-      color:  #001f3f;
-      background: url('waves-background.jpg') no-repeat top center ;
-      background-size: auto 355px;
+  color:  #001f3f;
+    background: url('waves-2.jpg') no-repeat top center ;
+      margin: 0 auto;
 }
+
 
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', monospace;
     color:  #001f3f;
+}
+
+.bg-image {
+
 }
 
 
@@ -21,8 +26,17 @@ p {
   font-size:9pt;
 }
 
-a {
+a:link, a:visited{
   color:#758e93;
+    padding:2px;
+}
+
+a:hover, a:active {
+  color:#ffffff;
+  background-color:#758e93;
+  padding:2px;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
 .services {
@@ -49,7 +63,8 @@ a {
 .container {
   max-width: 840px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(5, 255, 255, 0.8);
+    border-radius: 40px;
 }
 
 .container > div {
@@ -65,11 +80,6 @@ a {
   padding-top: 50px;
 }
 
-@media (max-width:480px) {
-  .about-grid {
-  grid-template-columns: 100%;
-  }
-}
 
 .projects-heading {
   text-align: center;
@@ -129,10 +139,12 @@ a {
 
 .icon {
   padding:10px;
+  width:50px;
 }
 
 .icon:hover {
   opacity: 50%;
+  background:none;
 }
 
 hr {
@@ -140,3 +152,11 @@ hr {
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+
+.footer {
+   text-align: center;
+     align-items: center;
+     font-family: 'Playfair Display', monospace;
+    color:  #001f3f;
+}
+
